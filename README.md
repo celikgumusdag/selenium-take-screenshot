@@ -4,9 +4,42 @@ Description
 ------------
 Simple implementation of taking screenshot of given page by using Selenium with Java.
 
+About
+------------
+This example project helps you understand Selenium with Java, TestNG, ChromeDriver and Apache Maven.
+
+You can find more information in this webpage: http://www.seleniumhq.org
+
+Usage
+------------
+For compile this example you need to Java Complier (such as IntelliJ IDEA, NetBeans, Eclipse)
+
+After you download the project you need to run this file with in TestNG Suite:
+
+```
+selenium-take-screenshot\src\test\java\TakeScreenshot.java
+```
+
+After total tests run, you will find screenshot in this directory:
+
+```
+selenium-take-screenshot\tmp\screenshot.png
+```
+
+You can change the given page with change:
+```java
+ driver.get("http://www.google.com/");
+```
+
+
 Maven Dependencies
 ------------
-In this project necessary for selenium and testng dependencies:
+
+##### What is Maven?
+
+Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+
+This project use selenium and testng dependencies in pom.xml:
 
 ```xml
     <dependencies>
@@ -24,13 +57,11 @@ In this project necessary for selenium and testng dependencies:
     </dependencies>
 ```
 
-About
-------------
-This example project helps you understand Selenium with Java, TestNG, ChromeDriver and Apache Maven.
+##### Selenium
+Selenium is a set of different software tools each with a different approach to supporting browser automation. These tools are highly flexible, allowing many options for locating and manipulating elements within a browser, and one of its key features is the support for automating multiple browser platforms.
 
-You can find more information in this webpage: http://www.seleniumhq.org
-
-You can find more example in this repository: https://github.com/SeleniumHQ/selenium
+##### TestNG
+TestNG is a testing framework designed to simplify a broad range of testing needs, from unit testing (testing a class in isolation of the others) to integration testing (testing entire systems made of several classes, several packages and even several external frameworks, such as application servers).
 
 Help
 ------------
